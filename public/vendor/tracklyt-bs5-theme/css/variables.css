@@ -1,0 +1,113 @@
+/**
+ * Tracklyt - Light Theme Variables
+ * Bootstrap 5.2.3 Compatible
+ * Mobile-First Design System
+ */
+
+:root {
+  /* Primary Brand Colors */
+  --tracklyt-primary: #2563eb;
+  --tracklyt-primary-dark: #1d4ed8;
+  --tracklyt-primary-light: #3b82f6;
+  --tracklyt-secondary: #7c3aed;
+  --tracklyt-accent: #059669;
+  --tracklyt-warning: #f59e0b;
+  --tracklyt-danger: #dc2626;
+  --tracklyt-success: #059669;
+  --tracklyt-info: #0891b2;
+
+  /* Light Theme Backgrounds */
+  --tracklyt-bg-primary: #ffffff;
+  --tracklyt-bg-secondary: #f8fafc;
+  --tracklyt-bg-tertiary: #f1f5f9;
+  --tracklyt-bg-card: #ffffff;
+  --tracklyt-bg-hover: #f1f5f9;
+  --tracklyt-bg-active: #e2e8f0;
+
+  /* Text Colors */
+  --tracklyt-text-primary: #0f172a;
+  --tracklyt-text-secondary: #334155;
+  --tracklyt-text-muted: #64748b;
+  --tracklyt-text-disabled: #94a3b8;
+
+  /* Border & Divider Colors */
+  --tracklyt-border: #e2e8f0;
+  --tracklyt-border-light: #cbd5e1;
+  --tracklyt-divider: #f1f5f9;
+
+  /* Gradients */
+  --tracklyt-gradient-primary: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  --tracklyt-gradient-success: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+  --tracklyt-gradient-danger: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);
+  --tracklyt-gradient-light: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+
+  /* Shadows */
+  --tracklyt-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --tracklyt-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --tracklyt-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --tracklyt-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --tracklyt-shadow-glow: 0 0 20px rgba(37, 99, 235, 0.2);
+  --tracklyt-shadow-glow-success: 0 0 20px rgba(5, 150, 105, 0.2);
+
+  /* Spacing (mobile-first) */
+  --tracklyt-space-xs: 0.5rem;   /* 8px */
+  --tracklyt-space-sm: 0.75rem;  /* 12px */
+  --tracklyt-space-md: 1rem;     /* 16px */
+  --tracklyt-space-lg: 1.5rem;   /* 24px */
+  --tracklyt-space-xl: 2rem;     /* 32px */
+  --tracklyt-space-2xl: 3rem;    /* 48px */
+
+  /* Border Radius */
+  --tracklyt-radius-sm: 0.375rem;  /* 6px */
+  --tracklyt-radius: 0.5rem;       /* 8px */
+  --tracklyt-radius-md: 0.75rem;   /* 12px */
+  --tracklyt-radius-lg: 1rem;      /* 16px */
+  --tracklyt-radius-xl: 1.5rem;    /* 24px */
+  --tracklyt-radius-full: 9999px;
+
+  /* Transitions */
+  --tracklyt-transition: all 0.2s ease-in-out;
+  --tracklyt-transition-fast: all 0.15s ease-in-out;
+  --tracklyt-transition-slow: all 0.3s ease-in-out;
+
+  /* Z-index layers */
+  --tracklyt-z-dropdown: 1000;
+  --tracklyt-z-sticky: 1020;
+  --tracklyt-z-fixed: 1030;
+  --tracklyt-z-modal-backdrop: 1040;
+  --tracklyt-z-modal: 1050;
+  --tracklyt-z-popover: 1060;
+  --tracklyt-z-tooltip: 1070;
+
+  /* Font Sizes (fluid typography) */
+  --tracklyt-text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --tracklyt-text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --tracklyt-text-base: clamp(1rem, 0.95rem + 0.5vw, 1.125rem);
+  --tracklyt-text-lg: clamp(1.125rem, 1.05rem + 0.75vw, 1.25rem);
+  --tracklyt-text-xl: clamp(1.25rem, 1.15rem + 1vw, 1.5rem);
+  --tracklyt-text-2xl: clamp(1.5rem, 1.35rem + 1.5vw, 2rem);
+  --tracklyt-text-3xl: clamp(1.875rem, 1.65rem + 2vw, 2.5rem);
+  --tracklyt-text-4xl: clamp(2.25rem, 1.95rem + 3vw, 3rem);
+}
+
+/* Tablet breakpoint adjustments */
+@media (min-width: 768px) {
+  :root {
+    --tracklyt-space-xs: 0.625rem;  /* 10px */
+    --tracklyt-space-sm: 1rem;      /* 16px */
+    --tracklyt-space-md: 1.25rem;   /* 20px */
+    --tracklyt-space-lg: 2rem;      /* 32px */
+    --tracklyt-space-xl: 2.5rem;    /* 40px */
+    --tracklyt-space-2xl: 4rem;     /* 64px */
+  }
+}
+
+/* Desktop breakpoint adjustments */
+@media (min-width: 1024px) {
+  :root {
+    --tracklyt-space-md: 1.5rem;    /* 24px */
+    --tracklyt-space-lg: 2.5rem;    /* 40px */
+    --tracklyt-space-xl: 3rem;      /* 48px */
+    --tracklyt-space-2xl: 5rem;     /* 80px */
+  }
+}
